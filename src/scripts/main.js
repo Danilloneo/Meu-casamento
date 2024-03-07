@@ -27,6 +27,6 @@ const contaAsHoras = setInterval(function(){
 
     if (diasAteOEvento < 0) {
         clearInterval(contaAsHoras);
-        document.getElementById('contador').innerHTML = 'Evento Expirado!';
+        document.getElementById('contador').innerHTML = 'Agradecemos o carinho, mas já nos casamos!';
     }
 }, 1000)
