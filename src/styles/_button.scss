@@ -1,0 +1,25 @@
+@use 'variables';
+
+.button {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap; //forçar o texto continuar na mesma linha
+    &--primary {
+        padding: 12px;
+        color: variables.$textDefaultColor;
+        background-color: variables.$darkred;
+        border-radius: 4px;
+    }
+
+    @media (max-width: 648px){
+        display: block;
+        width: 100%;
+    }
+
+    @media (max-width: 1024px){
+        display: flex;
+        align-items: center;
+    }
+}
